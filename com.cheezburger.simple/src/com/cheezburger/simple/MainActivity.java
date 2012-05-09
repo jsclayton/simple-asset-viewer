@@ -2,18 +2,17 @@ package com.cheezburger.simple;
 
 import android.content.Context;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.Window;
 
-public class MainActivity extends FragmentActivity
+public class MainActivity extends SherlockFragmentActivity
 {
     /** Called when the activity is first created. */
     @Override
@@ -22,7 +21,7 @@ public class MainActivity extends FragmentActivity
         super.onCreate(savedInstanceState);
         
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-        
+
         //getSharedPreferences("com.cheezburger.simple", MODE_PRIVATE).edit().putString("key", "value").commit();
         
         setContentView(R.layout.main);
@@ -44,7 +43,6 @@ public class MainActivity extends FragmentActivity
 
         loadImage("http://chzragecomics.files.wordpress.com/2012/02/rage-comics-summertime.png");
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
