@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cheezburger!</string>
+    <string name="api_auth_url">https://api.cheezburger.com/oauth/authorize?client_id=%s&amp;response_type=token&amp;redirect_uri=https://api.cheezburger.com/oauth/login_success</string>
+    <string name="api_url">https://api.cheezburger.com/v1</string>
+    <string name="client_id">6f3109959988399164f6eb85cc181895</string>
+    <string name="access_token">6f3109959988399164f6eb85cc181895</string>
+</resources>
